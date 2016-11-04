@@ -24,6 +24,8 @@
 
   <!-- Page style -->
   <link href="index.css" rel="stylesheet">
+  
+  <link href="dist/css/style.css" rel="stylesheet">
 
   <!-- jQuery -->
   <script src="//code.jquery.com/jquery-1.10.2.min.js"></script>
@@ -82,32 +84,23 @@
       <div class="panel-body">
         <h1>Resumo das Atividades</h1>
         <hr>
-         <div class="col-md-4">
+         <div class="col-md-6">
           <div class="alert alert-dismissible alert-info">
               <i class="material-icons">face</i>
-              <h1>120 membros</h1>
-              <h2>Total de Membros Comungantes</h2>
+              <h1 class="title-resume">120 membros</h1>
+              <h3>Total de Membros Comungantes</h3>
           </div>
       </div>
 
-      <div class="col-md-4">
-          <div class="alert alert-dismissible alert-info">
-          <button type="button" class="close" data-dismiss="alert">×</button>
-          <strong>Heads up!</strong> This
-          <a href="javascript:void(0)" class="alert-link">alert needs your attention</a>, but it's not super important.
-          </div>
-      </div>
-
-      <div class="col-md-4">
-          <div class="alert alert-dismissible alert-info">
-          <button type="button" class="close" data-dismiss="alert">×</button>
-          <strong>Heads up!</strong> This
-          <a href="javascript:void(0)" class="alert-link">alert needs your attention</a>, but it's not super important.
-          </div>
+      <div class="col-md-6">
+          <div class="alert alert-dismissible alert-danger">
+              <i class="material-icons">monetization_on</i>
+              <h1 class="title-resume">R$120.000</h1>
+              <h3>Receita no dia 04/11/2016</h3>
       </div>
     </div>
 </div>
-
+    </div>
 </div>
 <br>
 <br>
@@ -162,6 +155,7 @@
   </div>
   <div class="panel-footer">Sistema Web para Igrejas Evangélicas - Versão 1.0 - Weblife Brasil Solutions</div>
 </div> 
+    
 </footer>
 <!-- Twitter Bootstrap -->
 <script src="//cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.6/js/bootstrap.min.js"></script>
