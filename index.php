@@ -114,13 +114,13 @@
       </div>
         <div class="panel-body">
             <a href="#" class="btn btn-raised btn-success" data-toggle="modal" data-target="#myModal"><i class="material-icons">person_add</i>Cadastrar Membro</a>
-            <a href="javascript:void(0)" class="btn btn-raised btn-success"><i class="material-icons">person_outline</i>Alterar Membro</a>
-            <a href="javascript:void(0)" class="btn btn-raised btn-success"><i class="material-icons">remove</i>Excluir Membro</a>
+            <a href="javascript:void(0)" class="btn btn-raised btn-success"><i class="material-icons">person_outline</i>Buscar Membros</a>
+          
         </div>
       </div>    
     </div>
     
-    <!-- Modal  -->
+    <!-- #myModal  -->
     <div class="modal" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"">
   <div class="modal-dialog">
     <div class="modal-content">
@@ -149,10 +149,19 @@
                 <label class="control-label" for="focusedInput1">Endereço Completo</label>
                 <input class="form-control" id="focusedInput1" type="text">
               </div>
+              <div class="form-group label-floating">
+                <label class="control-label" for="focusedInput1">Telefone</label>
+                <input class="form-control" id="focusedInput1" type="text">
+              </div>
+             <div class="checkbox">
+                <label>
+                    <input type="checkbox"> Matriculado na EDB
+                 </label>
+              </div>
         </form>
       </div>
       <div class="modal-body">
-        <p>One fine body…</p>
+        <p>Cadastrar Membro - Nome do Membro</p>
       </div>
       <div class="modal-footer">
         <button type="button" class="btn btn-default" data-dismiss="modal">Fechar</button>
@@ -162,9 +171,7 @@
   </div>
 </div>
     
-    
-    
-    
+ 
   <!-- EBD-->  
     <div class="col-md-4">
       <div class="panel panel-info">
@@ -172,7 +179,8 @@
           <h3 class="panel-title"><i class="material-icons">library_books</i> Escola Bíblica Dominical (EBD)</h3>
         </div>
     <div class="panel-body">
-        Panel content
+        <a href="javascript:void(0)" class="btn btn-raised btn-primary"><i class="material-icons">book</i>Cadastrar Estudos</a>
+        <a href="javascript:void(0)" class="btn btn-raised btn-primary"><i class="material-icons">school</i>Cadastrar Professor</a>
   </div>
 </div>
       
