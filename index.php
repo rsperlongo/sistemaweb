@@ -110,15 +110,61 @@
     <div class="col-md-4">
       <div class="panel panel-primary">
         <div class="panel-heading">
-            
             <h2 class="panel-title"><i class="material-icons">face</i> GESTÃO DE MEMBROS</h2>
       </div>
-  <div class="panel-body">
-    Panel content
+        <div class="panel-body">
+            <a href="#" class="btn btn-raised btn-success" data-toggle="modal" data-target="#myModal"><i class="material-icons">person_add</i>Cadastrar Membro</a>
+            <a href="javascript:void(0)" class="btn btn-raised btn-success"><i class="material-icons">person_outline</i>Alterar Membro</a>
+            <a href="javascript:void(0)" class="btn btn-raised btn-success"><i class="material-icons">remove</i>Excluir Membro</a>
+        </div>
+      </div>    
+    </div>
+    
+    <!-- Modal  -->
+    <div class="modal" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+        <h4 class="modal-title">Cadastro de Membros</h4>
+        <form>
+              <div class="checkbox">
+                <label>
+                    <input type="checkbox"> Membro
+                 </label>
+              </div>
+              <div class="form-group label-floating">
+                <label class="control-label" for="focusedInput1">Membro desde:</label>
+                <input class="form-control" id="focusedInput1" type="date">
+              </div>
+              <div class="form-group label-floating">
+                <label class="control-label" for="focusedInput1">Nome Completo</label>
+                <input class="form-control" id="focusedInput1" type="text">
+              </div>
+              <div class="form-group label-floating">
+                <label class="control-label" for="focusedInput1">Data de Nascimento</label>
+                <input class="form-control" id="focusedInput1" type="text" placeholder="dd/mm/aaaa">
+              </div>
+              <div class="form-group label-floating">
+                <label class="control-label" for="focusedInput1">Endereço Completo</label>
+                <input class="form-control" id="focusedInput1" type="text">
+              </div>
+        </form>
+      </div>
+      <div class="modal-body">
+        <p>One fine body…</p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Fechar</button>
+        <button type="button" class="btn btn-primary">Cadastrar</button>
+      </div>
+    </div>
   </div>
 </div>
-      
-    </div>
+    
+    
+    
+    
   <!-- EBD-->  
     <div class="col-md-4">
       <div class="panel panel-info">
@@ -165,6 +211,11 @@
 <script src="dist/js/ripples.min.js"></script>
 <script>
   $.material.init();
+</script>
+<script>
+    $('#myModal').on('shown.bs.modal', function () {
+  $('#myInput').focus()
+})
 </script>
 </body>
 </html>
