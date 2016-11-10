@@ -45,7 +45,16 @@
     <div class="navbar-collapse collapse navbar-responsive-collapse">
       <ul class="nav navbar-nav">
         <li class="active"><a href="javascript:void(0)"> Home</a></li>
-        <li><a href="javascript:void(0)">Painel Administrativo</a></li>
+        <li class="dropdown">
+          <a href="bootstrap-elements.html" data-target="#" class="dropdown-toggle" data-toggle="dropdown">Administrativo
+            <b class="caret"></b></a>
+          <ul class="dropdown-menu">
+            <li><a href="javascript:void(0)"><i class="material-icons">face</i>Membros</a></li>
+            <li><a href="#"><i class="material-icons">library_books</i> Escola Dominical</a></li>
+            <li><a href="javascript:void(0)"><i class="material-icons">perm_contact_calendar</i> Programação</a></li>
+            <li><a href="javascript:void(0)"><i class="material-icons">monetization_on</i> Financeiro</a></li>
+          </ul>
+        </li>
         <li class="dropdown">
           <a href="bootstrap-elements.html" data-target="#" class="dropdown-toggle" data-toggle="dropdown">Ajuda
             <b class="caret"></b></a>
@@ -121,7 +130,7 @@
     </div>
     
     <!-- #myModal  -->
-    <div class="modal" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"">
+    <div class="modal" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
   <div class="modal-dialog">
     <div class="modal-content">
       <div class="modal-header">
@@ -184,7 +193,7 @@
   </div>
 </div>
       
-    </div>
+</div>
   <!-- Eventos e Programação -->  
     <div class="col-md-4">
       <div class="panel panel-warning">
@@ -192,16 +201,31 @@
       <h3 class="panel-title"><i class="material-icons">perm_contact_calendar</i> Eventos e Programação</h3>
     </div>
   <div class="panel-body">
-    Panel content
+     <a href="javascript:void(0)" class="btn btn-raised btn-danger"><i class="material-icons">event</i>Cadastrar Evento</a>
+     <a href="javascript:void(0)" class="btn btn-raised btn-danger"><i class="material-icons">date_range</i>Cadastrar Programação</a>
   </div>
 </div>
     </div>
+  <div class="col-md-8">
+      <div class="panel panel-success">
+  <div class="panel-heading">
+    <h3 class="panel-title"><i class="material-icons">monetization_on</i> Gestão Financeiro</h3>
+  </div>
+  <div class="panel-body">
+     <a href="javascript:void(0)" class="btn btn-raised btn-danger"><i class="material-icons">archive</i>Dízimos</a>
+     <a href="javascript:void(0)" class="btn btn-raised btn-danger"><i class="material-icons">loyalty</i>Ofertas</a>
+  </div>
+    </div>
+  </div>
+  <div class="col-md-4">
+      
+  </div>
+    
 </div>
-<div>
 <footer>
  <div class="panel panel-default">
   <div class="panel-body">
-    Panel content
+    SISTEMA DE GERENCIAMENTO PARA IGREJAS
     <br>
     <br>
     <br>
